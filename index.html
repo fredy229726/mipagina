@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/vector-gratis/fondo-tecnologia-azul-geometrico-degradado_52683-78527.jpg?size=626&ext=jpg&ga=GA1.1.933601817.1717286400&semt=ais_user'); /* Fondo de pantalla */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-color: rgba(240, 240, 240, 0.8); /* Fondo con opacidad */
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        header {
+            background-color: rgba(30, 27, 196, 0.8); /* Encabezado con opacidad */
+            color: #fff;
+            padding: 2%;
+            text-align: center;
+            transition: background-color 0.3s ease; /* Transición de color */
+        }
+        
+        header:hover {
+            background-color: rgba(24, 204, 195, 0.8); /* Cambio de color al pasar el cursor */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 2%;
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        nav ul li:hover {
+            transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Transición de color */
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        aside{
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+            border-radius: 5px; /* Bordes redondeados */
+            padding: 10px; /* Relleno interno */
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+            margin-top: 20px; /* Margen superior */
+            width: 40%;
+            height: 100%;
+        }
+        
+        main {
+            padding: 2%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        section {
+            margin-bottom: 3%;
+            background-color: rgba(255, 255, 255, 0.8); /* Sección con opacidad */
+            border-radius: 10px;
+            padding: 2%;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Transición de transformación */
+        }
+        
+        section:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+        }
+
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 1%;
+            margin-bottom: 2%;
+        }
+        
+        section p {
+            color: black;
+        }
+
+        .container-carrusel {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .carrusel {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carrusel-item {
+            flex: 0 0 auto;
+            width: 100%;
+            max-width: 100%;
+            margin-right: 20px;
+        }
+        
+        footer {
+            background-color: rgba(30, 27, 196, 0.8); /* Pie de página con opacidad */
+            color: #fff;
+            text-align: center;
+            padding: 1%;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer:hover{
+            background-color: rgba(24, 204, 195, 0.8);
+        }
+
+        footer a {
+            color: #fff; /* Color del texto */
+            text-decoration: none; /* Quita el subrayado */
+            transition: color 0.3s ease; /* Transición de color */
+        }
+
+        footer a:hover {
+            color: #ffd700; /* Cambio de color al pasar el cursor */
+        }
+        
+        /* Estilos para los iconos de contacto */
+        .contact-info i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Bienvenido a mi página!</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#quien">Sobre Mí</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <section id="servicios">
+                <h2>Tengo diferentes servicios, pregunta sin compromiso</h2>
+                <li>Instalaciones Electricas</li>
+                <li>Mantenimiento y actualización de equipo de computo</li>
+                <li>Clases de Inglés Básico</li>
+                <li>Clases de Computo y/o Mantenimiento a Computadoras y Redes de Computadoras</li>
+                <li>Desarrollo de Páginas Web Informativas (Como la mía)</li>
+                <div class="container-carrusel">
+                    <div class="carrusel">
+                        <img class="carrusel-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToU546nvVLN2-4_NmhRgyGAnVFixAJLIu2sw&s" alt="Imagen 1">
+                        <img class="carrusel-item" src="https://lh4.googleusercontent.com/proxy/dllkZKj3WOMWewxsXYlUgPNhFWmbWtJc2jUJ2WcPd8KY-SqR_uATYekFuO08SJ9ia25q5AtRFIJ3mO-XBQeRgVAKf7OA6gIrXRlk987LFJDv-FaMiRxHaJI" alt="Imagen 2">
+                        <img class="carrusel-item" src="https://eldiariodelaeducacion.com/wp-content/uploads/sites/17/2021/05/iStock-1178699298.jpg" alt="Imagen 3">
+                        <img class="carrusel-item" src="https://www.ionos.mx/digitalguide/fileadmin/DigitalGuide/Teaser/web-development-t.jpg" alt="Imagen 4">
+                    </div>
+                </div>
+                <script src="./script.js"></script>
+            </section>
+        </aside>
+        <main>
+            <!-- Contenido principal de la página -->
+            <section id="inicio">
+                <h2>¡Bienvenido!</h2>
+                <p>Si estás aquí, es probable que hayas escuchado sobre mí a través de un familiar, amigo o conocido. Me complace que me hayas encontrado. Estoy comprometido a brindarte el mejor servicio posible.
+
+                    Explora Mí página para descubrir cómo podemos ayudarte. Si tienes alguna pregunta, ¡no dudes en contáctarme!
+                    
+                    ¡Gracias por confiar en mí!
+                    
+                    </p>
+            </section>
+            <section id="quien">
+                <h2>Sobre mí</h2>
+                <p>Soy un joven que ha fortalecido sus habilidades de manera autodidacta a través de la práctica constante.</p>
+                <p>Completé mis estudios y obtuve el título de Técnico Electricista en el Cetis 109. Posteriormente, realicé estudios en el Cecati 24, donde obtuve los certificados de Mantenimiento Básico a Computadoras y Mantenimiento a Redes de Computadoras. Además, participé en diversos cursos ofrecidos por la Fundación Carlos Slim, como Reparación de Celulares y Tablets, Reparación de Pantallas LCD y Plasma, Mecánico Automotriz y Prevención de Delitos Cibernéticos, aunque mi enfoque principal en estos temas ha sido más para uso personal, ya que actualmente no me dedico profesionalmente a ellos debido a la falta de herramientas adecuadas.</p>
+                <p>Actualmente, estoy ampliando mis habilidades en el campo de la programación. Estudio programación con el lenguaje Python, así como desarrollo web utilizando herramientas de framework como HTML, CSS y JavaScript. Además, estoy incursionando en el aprendizaje del idioma japonés para expandir mis horizontes.</p>
+            </section>
+        </main>
+    </div> <!-- Cierre del div .container -->
+    <section>
+        <section id="contactanos">
+            <h2>Contáctame</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i>prezacruzjosealfredo.e0722@gmail.com</p>
+                    <p><i class="fab fa-whatsapp"></i>+52 (833) 353-75-71</p>
+                    <p>Pregunta sin compromiso</p>
+                </div>
+        </section>
+    </section>
+    <footer>
+        <p>Derechos de autor © 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p><a href="#inicio">Volver arriba</a></p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carrusel');
+            const carouselItems = document.querySelectorAll('.carrusel-item');
+            let currentIndex = 0;
+            const totalItems = carouselItems.length;
+            const itemWidth = carouselItems[0].clientWidth;
+
+            function moveCarousel() {
+                carousel.style.transform = `translateX(${-currentIndex * itemWidth}px)`;
+            }
+
+            function nextSlide() {
+                if (currentIndex < totalItems - 1) {
+                    currentIndex++;
+                } else {
+                    currentIndex = 0;
+                }
+                moveCarousel();
+            }
+
+            setInterval(nextSlide, 10000); 
+        });
+    </script>
+</body>
+
+</html>
